@@ -25,6 +25,11 @@
 /* Begin PBXFileReference section */
 		92145EC01E05DEA300A83479 /* OpenGL-LoadingModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenGL-LoadingModel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92145EC31E05DEA400A83479 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		92145EED1E05DF6400A83479 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		92145EEE1E05DF6400A83479 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		92145EEF1E05DFF600A83479 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		92145EF01E05E0BC00A83479 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		92145EF31E05FD8E00A83479 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			children = (
 				92145EC21E05DEA300A83479 /* OpenGL-LoadingModel */,
 				92145EC11E05DEA300A83479 /* Products */,
+				92145ECA1E05DEB600A83479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +63,21 @@
 		92145EC21E05DEA300A83479 /* OpenGL-LoadingModel */ = {
 			isa = PBXGroup;
 			children = (
+				92145EEF1E05DFF600A83479 /* resources */,
 				92145EC31E05DEA400A83479 /* main.cpp */,
+				92145EED1E05DF6400A83479 /* Camera.h */,
+				92145EEE1E05DF6400A83479 /* Shader.h */,
+				92145EF01E05E0BC00A83479 /* Mesh.h */,
+				92145EF31E05FD8E00A83479 /* Model.h */,
 			);
 			path = "OpenGL-LoadingModel";
+			sourceTree = "<group>";
+		};
+		92145ECA1E05DEB600A83479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +236,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AFNEC75D99;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/sdl2/2.0.4/lib,
+					/usr/local/Cellar/assimp/3.3.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +252,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AFNEC75D99;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.2.1/lib,
+					/usr/local/Cellar/glew/2.0.0/lib,
+					/usr/local/Cellar/sdl2/2.0.4/lib,
+					/usr/local/Cellar/assimp/3.3.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +283,7 @@
 				92145EC91E05DEA400A83479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
