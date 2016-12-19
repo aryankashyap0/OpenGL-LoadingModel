@@ -89,7 +89,6 @@ private:
     }
     
     
-    
     Mesh processMesh(aiMesh *mesh, const aiScene *scene)
     {
         // Data to fill
