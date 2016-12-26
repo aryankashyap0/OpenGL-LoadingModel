@@ -7,8 +7,8 @@ Below are some pics of the model we are loading
 ![N|Solid](https://raw.githubusercontent.com/NSAryan12/OpenGL-LoadingModel/master/imgs/1.png)
 
 # View 2 
-![N|Solid](https://raw.githubusercontent.com/NSAryan12/OpenGL-LoadingModel/master/imgs/2.png)
+![N|Solid](https://raw.githubusercontent.com/NSAryan12/OpenGL-LoadingModel/master/imgs/3.png)
 
 # View 3
 
-![N|Solid](https://raw.githubusercontent.com/NSAryan12/OpenGL-LoadingModel/master/imgs/3.png)
+![N|Solid](https://raw.githubusercontent.com/NSAryan12/OpenGL-LoadingModel/master/imgs/4.png)
