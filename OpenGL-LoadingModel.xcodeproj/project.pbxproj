@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		92145EC41E05DEA400A83479 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92145EC31E05DEA400A83479 /* main.cpp */; };
+		92D809C71E119D6B000F6606 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D809C61E119D6B000F6606 /* libglfw.3.2.dylib */; };
+		92D809C91E119EAD000F6606 /* glm in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D809C81E119EAD000F6606 /* glm */; };
+		92D809E41E11A0A7000F6606 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D809E31E11A0A7000F6606 /* libGLEW.2.0.0.dylib */; };
+		92D809E61E11A0BC000F6606 /* lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D809E51E11A0BC000F6606 /* lib */; };
+		92D809E81E11A157000F6606 /* libassimp.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D809E71E11A157000F6606 /* libassimp.3.3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +35,11 @@
 		92145EEF1E05DFF600A83479 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		92145EF01E05E0BC00A83479 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		92145EF31E05FD8E00A83479 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		92D809C61E119D6B000F6606 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		92D809C81E119EAD000F6606 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glm; path = ../../../../../usr/local/Cellar/glm; sourceTree = "<group>"; };
+		92D809E31E11A0A7000F6606 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		92D809E51E11A0BC000F6606 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../usr/local/Cellar/assimp/3.3.1/lib; sourceTree = "<group>"; };
+		92D809E71E11A157000F6606 /* libassimp.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.3.1.dylib; path = ../../../../../usr/local/Cellar/assimp/3.3.1/lib/libassimp.3.3.1.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D809E81E11A157000F6606 /* libassimp.3.3.1.dylib in Frameworks */,
+				92D809E61E11A0BC000F6606 /* lib in Frameworks */,
+				92D809E41E11A0A7000F6606 /* libGLEW.2.0.0.dylib in Frameworks */,
+				92D809C91E119EAD000F6606 /* glm in Frameworks */,
+				92D809C71E119D6B000F6606 /* libglfw.3.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,11 @@
 		92145ECA1E05DEB600A83479 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92D809E71E11A157000F6606 /* libassimp.3.3.1.dylib */,
+				92D809E51E11A0BC000F6606 /* lib */,
+				92D809E31E11A0A7000F6606 /* libGLEW.2.0.0.dylib */,
+				92D809C81E119EAD000F6606 /* glm */,
+				92D809C61E119D6B000F6606 /* libglfw.3.2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +263,7 @@
 					/usr/local/Cellar/glew/2.0.0/lib,
 					/usr/local/Cellar/sdl2/2.0.4/lib,
 					/usr/local/Cellar/assimp/3.3.1/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -259,6 +280,7 @@
 					/usr/local/Cellar/glew/2.0.0/lib,
 					/usr/local/Cellar/sdl2/2.0.4/lib,
 					/usr/local/Cellar/assimp/3.3.1/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
